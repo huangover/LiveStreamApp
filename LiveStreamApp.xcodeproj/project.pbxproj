@@ -16,6 +16,19 @@
 		D347469021BB8AD500ECF5D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D347468F21BB8AD500ECF5D5 /* main.m */; };
 		D3750B2D21BCF6A2009A0F11 /* test.pcm in Resources */ = {isa = PBXBuildFile; fileRef = D3750B2C21BCF6A2009A0F11 /* test.pcm */; };
 		D3750B3121BCF9EA009A0F11 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3750B3021BCF9EA009A0F11 /* libmp3lame.a */; };
+		D3CEE25B21BD4935005F7A02 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE25A21BD4935005F7A02 /* libz.1.dylib */; };
+		D3CEE25D21BD494B005F7A02 /* libbz2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE25C21BD494A005F7A02 /* libbz2.1.0.dylib */; };
+		D3CEE25F21BD4967005F7A02 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE25E21BD4967005F7A02 /* libiconv.2.dylib */; };
+		D3CEE27521BD4D04005F7A02 /* FFmpeg-iOS in Resources */ = {isa = PBXBuildFile; fileRef = D3CEE27421BD4D04005F7A02 /* FFmpeg-iOS */; };
+		D3CEE27C21BD4D19005F7A02 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE27621BD4D18005F7A02 /* libavcodec.a */; };
+		D3CEE27D21BD4D19005F7A02 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE27721BD4D19005F7A02 /* libavfilter.a */; };
+		D3CEE27E21BD4D19005F7A02 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE27821BD4D19005F7A02 /* libavutil.a */; };
+		D3CEE27F21BD4D19005F7A02 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE27921BD4D19005F7A02 /* libswresample.a */; };
+		D3CEE28021BD4D19005F7A02 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE27A21BD4D19005F7A02 /* libswscale.a */; };
+		D3CEE28121BD4D19005F7A02 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE27B21BD4D19005F7A02 /* libavformat.a */; };
+		D3CEE28321BD4D3F005F7A02 /* libfdk-aac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE28221BD4D3E005F7A02 /* libfdk-aac.a */; };
+		D3CEE28521BD4D4E005F7A02 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CEE28421BD4D4E005F7A02 /* libx264.a */; };
+		D3CEE2DC21BD4E92005F7A02 /* FFmpegManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CEE2DB21BD4E92005F7A02 /* FFmpegManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +48,20 @@
 		D347469721BB8BD500ECF5D5 /* MP3Encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MP3Encoder.hpp; sourceTree = "<group>"; };
 		D3750B2C21BCF6A2009A0F11 /* test.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.pcm; sourceTree = "<group>"; };
 		D3750B3021BCF9EA009A0F11 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		D3CEE25A21BD4935005F7A02 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		D3CEE25C21BD494A005F7A02 /* libbz2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.1.0.dylib; path = ../../../../usr/lib/libbz2.1.0.dylib; sourceTree = "<group>"; };
+		D3CEE25E21BD4967005F7A02 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		D3CEE27421BD4D04005F7A02 /* FFmpeg-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FFmpeg-iOS"; sourceTree = "<group>"; };
+		D3CEE27621BD4D18005F7A02 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = "FFmpeg-iOS/lib/libavcodec.a"; sourceTree = "<group>"; };
+		D3CEE27721BD4D19005F7A02 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = "FFmpeg-iOS/lib/libavfilter.a"; sourceTree = "<group>"; };
+		D3CEE27821BD4D19005F7A02 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = "FFmpeg-iOS/lib/libavutil.a"; sourceTree = "<group>"; };
+		D3CEE27921BD4D19005F7A02 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = "FFmpeg-iOS/lib/libswresample.a"; sourceTree = "<group>"; };
+		D3CEE27A21BD4D19005F7A02 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = "FFmpeg-iOS/lib/libswscale.a"; sourceTree = "<group>"; };
+		D3CEE27B21BD4D19005F7A02 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = "FFmpeg-iOS/lib/libavformat.a"; sourceTree = "<group>"; };
+		D3CEE28221BD4D3E005F7A02 /* libfdk-aac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libfdk-aac.a"; sourceTree = "<group>"; };
+		D3CEE28421BD4D4E005F7A02 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		D3CEE2DA21BD4E92005F7A02 /* FFmpegManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFmpegManager.h; sourceTree = "<group>"; };
+		D3CEE2DB21BD4E92005F7A02 /* FFmpegManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFmpegManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +69,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3CEE27C21BD4D19005F7A02 /* libavcodec.a in Frameworks */,
+				D3CEE27D21BD4D19005F7A02 /* libavfilter.a in Frameworks */,
+				D3CEE27E21BD4D19005F7A02 /* libavutil.a in Frameworks */,
+				D3CEE27F21BD4D19005F7A02 /* libswresample.a in Frameworks */,
+				D3CEE28021BD4D19005F7A02 /* libswscale.a in Frameworks */,
+				D3CEE28121BD4D19005F7A02 /* libavformat.a in Frameworks */,
+				D3CEE28521BD4D4E005F7A02 /* libx264.a in Frameworks */,
+				D3CEE25F21BD4967005F7A02 /* libiconv.2.dylib in Frameworks */,
+				D3CEE25D21BD494B005F7A02 /* libbz2.1.0.dylib in Frameworks */,
+				D3CEE25B21BD4935005F7A02 /* libz.1.dylib in Frameworks */,
+				D3CEE28321BD4D3F005F7A02 /* libfdk-aac.a in Frameworks */,
 				D3750B3121BCF9EA009A0F11 /* libmp3lame.a in Frameworks */,
 				26B21F664CA339821BF80D52 /* libPods-LiveStreamApp.a in Frameworks */,
 			);
@@ -53,6 +91,18 @@
 		AC95A9FAEC81B68960773B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3CEE28421BD4D4E005F7A02 /* libx264.a */,
+				D3CEE28221BD4D3E005F7A02 /* libfdk-aac.a */,
+				D3CEE27621BD4D18005F7A02 /* libavcodec.a */,
+				D3CEE27721BD4D19005F7A02 /* libavfilter.a */,
+				D3CEE27B21BD4D19005F7A02 /* libavformat.a */,
+				D3CEE27821BD4D19005F7A02 /* libavutil.a */,
+				D3CEE27921BD4D19005F7A02 /* libswresample.a */,
+				D3CEE27A21BD4D19005F7A02 /* libswscale.a */,
+				D3CEE27421BD4D04005F7A02 /* FFmpeg-iOS */,
+				D3CEE25E21BD4967005F7A02 /* libiconv.2.dylib */,
+				D3CEE25C21BD494A005F7A02 /* libbz2.1.0.dylib */,
+				D3CEE25A21BD4935005F7A02 /* libz.1.dylib */,
 				D3750B3021BCF9EA009A0F11 /* libmp3lame.a */,
 				AEDAA0FD5F9DF5F081A7C7B4 /* libPods-LiveStreamApp.a */,
 			);
@@ -91,6 +141,8 @@
 				D347468E21BB8AD500ECF5D5 /* Info.plist */,
 				D347468F21BB8AD500ECF5D5 /* main.m */,
 				D347469721BB8BD500ECF5D5 /* MP3Encoder.hpp */,
+				D3CEE2DA21BD4E92005F7A02 /* FFmpegManager.h */,
+				D3CEE2DB21BD4E92005F7A02 /* FFmpegManager.m */,
 			);
 			path = LiveStreamApp;
 			sourceTree = "<group>";
@@ -165,6 +217,7 @@
 				D347468D21BB8AD500ECF5D5 /* LaunchScreen.storyboard in Resources */,
 				D347468A21BB8AD500ECF5D5 /* Assets.xcassets in Resources */,
 				D3750B2D21BCF6A2009A0F11 /* test.pcm in Resources */,
+				D3CEE27521BD4D04005F7A02 /* FFmpeg-iOS in Resources */,
 				D347468821BB8AD400ECF5D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +252,7 @@
 			files = (
 				D347468521BB8AD400ECF5D5 /* ViewController.mm in Sources */,
 				D347469021BB8AD500ECF5D5 /* main.m in Sources */,
+				D3CEE2DC21BD4E92005F7A02 /* FFmpegManager.m in Sources */,
 				D347468221BB8AD400ECF5D5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +399,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 496CFRCQ48;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/mp3lame-for-ios\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/mp3lame-for-ios\"",
+					"$(SRCROOT)/FFmpeg-iOS/include",
+				);
 				INFOPLIST_FILE = LiveStreamApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -354,6 +420,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FFmpeg-iOS/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiveStreamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +436,18 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 496CFRCQ48;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/mp3lame-for-ios\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Mantle\"",
+					"\"${PODS_ROOT}/Headers/Public/mp3lame-for-ios\"",
+					"$(SRCROOT)/FFmpeg-iOS/include",
+				);
 				INFOPLIST_FILE = LiveStreamApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,6 +457,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FFmpeg-iOS/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiveStreamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
