@@ -7,25 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26B21F664CA339821BF80D52 /* libPods-LiveStreamApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEDAA0FD5F9DF5F081A7C7B4 /* libPods-LiveStreamApp.a */; };
 		D347468221BB8AD400ECF5D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D347468121BB8AD400ECF5D5 /* AppDelegate.m */; };
-		D347468521BB8AD400ECF5D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D347468421BB8AD400ECF5D5 /* ViewController.m */; };
+		D347468521BB8AD400ECF5D5 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D347468421BB8AD400ECF5D5 /* ViewController.mm */; };
 		D347468821BB8AD400ECF5D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D347468621BB8AD400ECF5D5 /* Main.storyboard */; };
 		D347468A21BB8AD500ECF5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D347468921BB8AD500ECF5D5 /* Assets.xcassets */; };
 		D347468D21BB8AD500ECF5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D347468B21BB8AD500ECF5D5 /* LaunchScreen.storyboard */; };
 		D347469021BB8AD500ECF5D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D347468F21BB8AD500ECF5D5 /* main.m */; };
+		D347469C21BBB30A00ECF5D5 /* libmp3lame-arm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D347469B21BBB30A00ECF5D5 /* libmp3lame-arm64.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		562AD79AC9581D9C90A6BBC0 /* Pods-LiveStreamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamApp/Pods-LiveStreamApp.release.xcconfig"; sourceTree = "<group>"; };
+		8E55F56B8FE0616DECA1BD98 /* Pods-LiveStreamApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamApp/Pods-LiveStreamApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AEDAA0FD5F9DF5F081A7C7B4 /* libPods-LiveStreamApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveStreamApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D347467D21BB8AD400ECF5D5 /* LiveStreamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveStreamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D347468021BB8AD400ECF5D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D347468121BB8AD400ECF5D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D347468321BB8AD400ECF5D5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D347468421BB8AD400ECF5D5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D347468421BB8AD400ECF5D5 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		D347468721BB8AD400ECF5D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D347468921BB8AD500ECF5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D347468C21BB8AD500ECF5D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D347468E21BB8AD500ECF5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D347468F21BB8AD500ECF5D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D347469721BB8BD500ECF5D5 /* MP3Encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MP3Encoder.hpp; sourceTree = "<group>"; };
+		D347469B21BBB30A00ECF5D5 /* libmp3lame-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libmp3lame-arm64.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D347469C21BBB30A00ECF5D5 /* libmp3lame-arm64.a in Frameworks */,
+				26B21F664CA339821BF80D52 /* libPods-LiveStreamApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC95A9FAEC81B68960773B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D347469B21BBB30A00ECF5D5 /* libmp3lame-arm64.a */,
+				AEDAA0FD5F9DF5F081A7C7B4 /* libPods-LiveStreamApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D347467421BB8AD400ECF5D5 = {
 			isa = PBXGroup;
 			children = (
 				D347467F21BB8AD400ECF5D5 /* LiveStreamApp */,
 				D347467E21BB8AD400ECF5D5 /* Products */,
+				DB9E2B895AA43FAEF00F462D /* Pods */,
+				AC95A9FAEC81B68960773B3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,14 +81,24 @@
 				D347468021BB8AD400ECF5D5 /* AppDelegate.h */,
 				D347468121BB8AD400ECF5D5 /* AppDelegate.m */,
 				D347468321BB8AD400ECF5D5 /* ViewController.h */,
-				D347468421BB8AD400ECF5D5 /* ViewController.m */,
+				D347468421BB8AD400ECF5D5 /* ViewController.mm */,
 				D347468621BB8AD400ECF5D5 /* Main.storyboard */,
 				D347468921BB8AD500ECF5D5 /* Assets.xcassets */,
 				D347468B21BB8AD500ECF5D5 /* LaunchScreen.storyboard */,
 				D347468E21BB8AD500ECF5D5 /* Info.plist */,
 				D347468F21BB8AD500ECF5D5 /* main.m */,
+				D347469721BB8BD500ECF5D5 /* MP3Encoder.hpp */,
 			);
 			path = LiveStreamApp;
+			sourceTree = "<group>";
+		};
+		DB9E2B895AA43FAEF00F462D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E55F56B8FE0616DECA1BD98 /* Pods-LiveStreamApp.debug.xcconfig */,
+				562AD79AC9581D9C90A6BBC0 /* Pods-LiveStreamApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D347469321BB8AD500ECF5D5 /* Build configuration list for PBXNativeTarget "LiveStreamApp" */;
 			buildPhases = (
+				C43D0FADE043CF92CC923CAE /* [CP] Check Pods Manifest.lock */,
 				D347467921BB8AD400ECF5D5 /* Sources */,
 				D347467A21BB8AD400ECF5D5 /* Frameworks */,
 				D347467B21BB8AD400ECF5D5 /* Resources */,
@@ -136,12 +167,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C43D0FADE043CF92CC923CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveStreamApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D347467921BB8AD400ECF5D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D347468521BB8AD400ECF5D5 /* ViewController.m in Sources */,
+				D347468521BB8AD400ECF5D5 /* ViewController.mm in Sources */,
 				D347469021BB8AD500ECF5D5 /* main.m in Sources */,
 				D347468221BB8AD400ECF5D5 /* AppDelegate.m in Sources */,
 			);
@@ -283,6 +335,7 @@
 		};
 		D347469421BB8AD500ECF5D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E55F56B8FE0616DECA1BD98 /* Pods-LiveStreamApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +345,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiveStreamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +357,7 @@
 		};
 		D347469521BB8AD500ECF5D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562AD79AC9581D9C90A6BBC0 /* Pods-LiveStreamApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +366,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiveStreamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
