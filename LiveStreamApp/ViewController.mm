@@ -17,10 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *pcmPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"pcm"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = paths[0];
+    NSString *mp3Path = [documentsDirectory stringByAppendingPathComponent:@"vocal.mp3"];
+    
     MP3Encoder *encoder = new MP3Encoder();
-    encoder->encode();
+    encoder->Init([pcmPath cStringUsingEncoding:[NSString defaultCStringEncoding]],
+                  [mp3Path cStringUsingEncoding:[NSString defaultCStringEncoding]],
+                  44100, 2, 64000);
+    encoder->Encode();
     delete encoder;
+    
+    if([[NSFileManager defaultManager] fileExistsAtPath:mp3Path]) {
+        NSLog(@"mp3文件存在");
+    } else {
+        NSLog(@"mp3文件不存在");
+    }
+    
 }
 
 

@@ -14,7 +14,8 @@
 		D347468A21BB8AD500ECF5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D347468921BB8AD500ECF5D5 /* Assets.xcassets */; };
 		D347468D21BB8AD500ECF5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D347468B21BB8AD500ECF5D5 /* LaunchScreen.storyboard */; };
 		D347469021BB8AD500ECF5D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D347468F21BB8AD500ECF5D5 /* main.m */; };
-		D347469C21BBB30A00ECF5D5 /* libmp3lame-arm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D347469B21BBB30A00ECF5D5 /* libmp3lame-arm64.a */; };
+		D3750B2D21BCF6A2009A0F11 /* test.pcm in Resources */ = {isa = PBXBuildFile; fileRef = D3750B2C21BCF6A2009A0F11 /* test.pcm */; };
+		D3750B3121BCF9EA009A0F11 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3750B3021BCF9EA009A0F11 /* libmp3lame.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,8 @@
 		D347468E21BB8AD500ECF5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D347468F21BB8AD500ECF5D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D347469721BB8BD500ECF5D5 /* MP3Encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MP3Encoder.hpp; sourceTree = "<group>"; };
-		D347469B21BBB30A00ECF5D5 /* libmp3lame-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libmp3lame-arm64.a"; sourceTree = "<group>"; };
+		D3750B2C21BCF6A2009A0F11 /* test.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.pcm; sourceTree = "<group>"; };
+		D3750B3021BCF9EA009A0F11 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D347469C21BBB30A00ECF5D5 /* libmp3lame-arm64.a in Frameworks */,
+				D3750B3121BCF9EA009A0F11 /* libmp3lame.a in Frameworks */,
 				26B21F664CA339821BF80D52 /* libPods-LiveStreamApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +53,7 @@
 		AC95A9FAEC81B68960773B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D347469B21BBB30A00ECF5D5 /* libmp3lame-arm64.a */,
+				D3750B3021BCF9EA009A0F11 /* libmp3lame.a */,
 				AEDAA0FD5F9DF5F081A7C7B4 /* libPods-LiveStreamApp.a */,
 			);
 			name = Frameworks;
@@ -82,6 +84,7 @@
 				D347468121BB8AD400ECF5D5 /* AppDelegate.m */,
 				D347468321BB8AD400ECF5D5 /* ViewController.h */,
 				D347468421BB8AD400ECF5D5 /* ViewController.mm */,
+				D3750B2C21BCF6A2009A0F11 /* test.pcm */,
 				D347468621BB8AD400ECF5D5 /* Main.storyboard */,
 				D347468921BB8AD500ECF5D5 /* Assets.xcassets */,
 				D347468B21BB8AD500ECF5D5 /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 			files = (
 				D347468D21BB8AD500ECF5D5 /* LaunchScreen.storyboard in Resources */,
 				D347468A21BB8AD500ECF5D5 /* Assets.xcassets in Resources */,
+				D3750B2D21BCF6A2009A0F11 /* test.pcm in Resources */,
 				D347468821BB8AD400ECF5D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +344,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 496CFRCQ48;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LiveStreamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +368,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 496CFRCQ48;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LiveStreamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
